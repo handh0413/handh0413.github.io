@@ -14,8 +14,8 @@ GEM
   remote: https://rubygems.org/
   specs:
     Ascii85 (1.1.1)
-    addressable (2.8.6)
-      public_suffix (>= 2.0.2, < 6.0)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
     afm (0.2.2)
     async (2.12.0)
       console (~> 1.25, >= 1.25.2)
@@ -34,7 +34,10 @@ GEM
     ethon (0.16.0)
       ffi (>= 1.15.0)
     eventmachine (1.2.7)
+    eventmachine (1.2.7-x86-mingw32)
     ffi (1.17.0-arm64-darwin)
+    ffi (1.17.0-x64-mingw-ucrt)
+    ffi (1.17.0-x86-mingw32)
     ffi (1.17.0-x86_64-darwin)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
@@ -42,6 +45,12 @@ GEM
     fiber-storage (0.1.2)
     forwardable-extended (2.6.0)
     google-protobuf (4.27.1-arm64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.27.1-x64-mingw-ucrt)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.27.1-x86-mingw32)
       bigdecimal
       rake (>= 13)
     google-protobuf (4.27.1-x86_64-darwin)
@@ -104,6 +113,10 @@ GEM
     mercenary (0.4.0)
     nokogiri (1.16.6-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.16.6-x64-mingw-ucrt)
+      racc (~> 1.4)
+    nokogiri (1.16.6-x86-mingw32)
+      racc (~> 1.4)
     nokogiri (1.16.6-x86_64-darwin)
       racc (~> 1.4)
     pathutil (0.16.2)
@@ -114,7 +127,7 @@ GEM
       hashery (~> 2.0)
       ruby-rc4
       ttfunk
-    public_suffix (5.1.1)
+    public_suffix (6.0.0)
     racc (1.8.0)
     rainbow (3.1.1)
     rake (13.2.1)
@@ -128,6 +141,10 @@ GEM
     safe_yaml (1.0.5)
     sass-embedded (1.77.5-arm64-darwin)
       google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.77.5-x64-mingw-ucrt)
+      google-protobuf (>= 3.25, < 5.0)
+    sass-embedded (1.77.5-x86-mingw32)
+      google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.77.5-x86_64-darwin)
       google-protobuf (>= 3.25, < 5.0)
     strscan (3.1.0)
@@ -137,6 +154,10 @@ GEM
       bigdecimal (~> 3.1)
     typhoeus (1.4.1)
       ethon (>= 0.9.0)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2024.1)
+      tzinfo (>= 1.0.0)
     unicode-display_width (2.5.0)
     webrick (1.8.1)
     yell (2.2.2)
@@ -144,11 +165,15 @@ GEM
 
 PLATFORMS
   arm64-darwin
+  x64-mingw-ucrt
+  x86-mingw32
   x86_64-darwin
 
 DEPENDENCIES
   html-proofer (~> 5.0)
   jekyll-theme-chirpy!
+  tzinfo
+  tzinfo-data
 
 BUNDLED WITH
    2.5.13
