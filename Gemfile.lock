@@ -39,6 +39,7 @@ GEM
     ffi (1.17.0-x64-mingw-ucrt)
     ffi (1.17.0-x86-mingw32)
     ffi (1.17.0-x86_64-darwin)
+    ffi (1.17.0-x86_64-linux-gnu)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
       fiber-storage
@@ -54,6 +55,9 @@ GEM
       bigdecimal
       rake (>= 13)
     google-protobuf (4.27.1-x86_64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.27.1-x86_64-linux)
       bigdecimal
       rake (>= 13)
     hashery (2.1.2)
@@ -119,6 +123,8 @@ GEM
       racc (~> 1.4)
     nokogiri (1.16.6-x86_64-darwin)
       racc (~> 1.4)
+    nokogiri (1.16.6-x86_64-linux)
+      racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     pdf-reader (2.12.0)
@@ -139,6 +145,9 @@ GEM
     rouge (4.3.0)
     ruby-rc4 (0.1.5)
     safe_yaml (1.0.5)
+    sass-embedded (1.77.5)
+      google-protobuf (>= 3.25, < 5.0)
+      rake (>= 13)
     sass-embedded (1.77.5-arm64-darwin)
       google-protobuf (>= 3.25, < 5.0)
     sass-embedded (1.77.5-x64-mingw-ucrt)
@@ -168,6 +177,7 @@ PLATFORMS
   x64-mingw-ucrt
   x86-mingw32
   x86_64-darwin
+  x86_64-linux
 
 DEPENDENCIES
   html-proofer (~> 5.0)
